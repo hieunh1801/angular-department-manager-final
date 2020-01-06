@@ -1,0 +1,4 @@
+ALTER TABLE `departmentmanager`.`person` 
+ADD COLUMN `phone_number` VARCHAR(200) NULL AFTER `date_of_birth`,
+ADD COLUMN `email` VARCHAR(200) NULL AFTER `phone_number`,
+CHANGE COLUMN `date_of_bird` `date_of_birth` DATE NULL DEFAULT NULL ;

@@ -1,0 +1,2 @@
+ng generate component <name>
+ng generate module [name] --routing

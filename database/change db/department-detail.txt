@@ -1,0 +1,9 @@
+ALTER TABLE `departmentmanager`.`apartment_detail` 
+DROP COLUMN `status`,
+DROP COLUMN `name`;
+
+ALTER TABLE `departmentmanager`.`apartment` 
+ADD COLUMN `name` VARCHAR(200) NULL DEFAULT NULL AFTER `edited_by`;
+
+ALTER TABLE `departmentmanager`.`apartment_detail` 
+ADD COLUMN `is_main` TINYINT NULL AFTER `id_apartment`;
